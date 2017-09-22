@@ -1,0 +1,175 @@
+<!-------- THIS IS MY REFERENCE FILE FOR ALL JAVASCRIPT-RELATED SYNTAX -------->
+
+<html>
+<head>
+</head>
+
+<!-- NOTE: The tag below says that what's inside is a script of type javascript. -->
+<script type="text/javascript">
+    <!--
+    // NOTE: You usually wrap the content in the comments above and below so it
+    //       doesn't screw up on older browsers.
+    -->
+</script>
+
+<!---------------------------- FORMAT FOR CLASSES ----------------------------->
+<!-- Useful read: https://www.phpied.com/3-ways-to-define-a-javascript-class/ -->
+<script type="text/javascript">
+    <!--
+    //<!-------------- FORMAT FOR A CLASS THAT CAN HAVE MANY INSTANCES -------->
+    function person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    var matt = new person("Matthieu Capuano", 22);
+    var celly = new person("Celina Lui", 21);
+    var milou = new person("Milou Capuano", 6);
+    document.write(matt.name + "<br />");
+    document.write(celly.name + "<br />")
+    document.write("Wait a minute..." + milou.name + " isn't a person! <br />");
+
+
+    //<!------------- FORMAT FOR A SINGLETON/OBJECT INITIALIZER --------------->
+    kanye = {name: "Kanye West", age: 40};
+    kim = {name: "Kim Kardashian", age: 36};
+
+    document.write(kanye.name + " is married to " + kim.name + " and their age"
+        + " difference is: " + (kanye.age - kim.age) + "<br />");
+
+
+    //<!--------------- EXAMPLE OF A CLASS WITH FUNCTIONS --------------------->
+    function people(name, age) {
+        this.name = name;
+        this.age = age;
+        this.funcReference = exampleFunc;
+        this.YearsUntilRetire = yearsLeft;
+        //<!-- ^Note the lack of () because we're passing the class name -->
+    }
+
+    function exampleFunc() {
+        var toStr = "His/her name is " + this.name + " and he/she is "
+                    + this.age + " years old." + "<br />";
+        document.write(toStr);
+    }
+
+    function yearsLeft() {
+        var numYears = 65 - this.age;
+        return numYears;
+    }
+
+    var slim = new people("Slim Shady", 44);
+    slim.funcReference();
+    document.write(slim.YearsUntilRetire() + "<br />");
+    //<!-- This is weird but note that we put () after the name of the instance,
+    //     not the function. So instead of calling the function, you call the
+    //     instance that references the function. -->
+
+    //-->
+</script>
+
+<body>
+    <script type="text/javascript">
+		<!--
+		//<!--------------------- FORMAT FOR A FUNCTION ---------------------->
+		function aFunction(var1, var2) {
+			alert("The first variable " + var1 + "<br /> The second variable: " + two);
+		}
+
+		function func4() {
+			document.write("IT WORKED??");
+		}
+
+		var count = 0;
+		function counter() {
+			count++
+		}
+
+		<!-- FORMAT FOR switch/case -->
+		function printCount() {
+			var toPrint;
+			switch(count) {
+				case 0:
+					toPrint = "Count hasn't been increased yet";
+					break;
+				case 1:
+					toPrint = "One more time"
+					break;
+				case 2:
+					toPrint = "Increased twice"
+					break;
+				case 3:
+					toPrint = "Third time's the charm"
+					break;
+				default:
+					toPrint = "Count = " + count;
+			}
+			alert(toPrint);
+		}
+
+		<!-- FORMAT FOR for-loops -->
+		for(x = 5; x < 9; x++) {
+			document.write("For loop iteration " + x + "<br />");
+		}
+
+		<!-- FORMAT FOR while-loops -->
+		var run = 1;
+		while(run < 7) {
+			document.write("While loop iteration " + run + "<br />");
+			run++;
+		}
+
+		<!-- FORMAT FOR do-loops -->
+		var doIt = 5;
+		do {
+			document.write(doIt + " alo! <br />");
+			doIt++;
+		} while (doIt <= 10);
+
+
+		<!-- EXAMPLE OF VARIABLE TYPES -->
+        var num = -23.3434;
+        var bool = false;
+        var nll = null;
+        <!-- Note: Javascript is weakly typed so you can change var type -->
+        document.write(bool);
+        bool = 50;
+        document.write(bool);
+
+		function printt() {
+			document.write(z);
+		}
+
+		document.write(x);
+
+		var count2 = 1;
+		while (count2 < 0) {
+			alert("Alert " + count2);
+			count2++;
+		}
+
+
+		//-->
+    </script>
+
+	<form>
+		<!-- FORMAT FOR EVENT HANDLERS -->
+		<!-- Note that anything in the "" after onclick="..." must be Javascript code -->
+		<!-- Note: If you want to pass a string to a function you're calling in onclick, use single quotation -->
+		<!-- Note: I think you can literally just write code in there, but it's better to call function & do it externally -->
+		<input type="button" value="Increase Count" onclick="counter()">
+		<input type="button" value="Show Counter" onclick="printCount()">
+	</form>
+
+	<!-- FORMAT FOR OTHER EVENT HANDLERS -->
+	<a href="http://Google.com" onMouseOver="alert('You hovered over me!');">Hover over me!</a>
+	<a href="http://Google.com" onMouseOut="alert('Hey come back!');">Hover over, then leave!</a>
+
+</body>
+
+	<!-- EXAMPLE OF onLoad EVENT HANDLER -->
+	<!-- Note: This only runs once the webpage has done loading -->
+	<!-- REMOVE THIS LINE TO SEE onLoad and onUnload EVENTS
+    <body onLoad="alert('The website has loaded');">
+	<body onUnload="alert('Goodbye!');"> <!-- DOES NOT WORK, NOT SURE WHY -->
+</html>

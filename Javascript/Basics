@@ -1,0 +1,129 @@
+<html>
+<head>
+</head>
+
+<body>
+    <script type="text/javascript">
+        <!--
+        //<!-------------------------- ARRAYS ---------------------------------->
+        //<!-- Method 1 -->
+        var people = new Array("Bucky", "Tommy", "Sarah", "Hannah", "Jessica");
+        document.write(people[3] + "<br />");
+
+        // <!-- Method 2 -->
+        var things = new Array(3);
+        things[0] = "Jersey Shore";
+        things[1] = "Brian Regan";
+        things[2] = "thenewboston";
+        document.write(things[2] + "<br />");
+
+        //<!-- NOTE: Since javascript is weird, you can do this -->
+        things[5] = "test5";
+        document.write(things[10] + "<br />");
+        things[-5] = "wtf???";
+        document.write(things[-5] + "<br />"); <!-- Actually works... -->
+        // <!-- This has interesting effects on the length, so at first we had 3 -->
+        document.write("Initial length with 3 + 2 elemens: " + things.length + "<br />");
+        things[15] = "test15";
+        document.write("New length after things[15]: " + things.length + "<br />");
+        things[-10] = "test-10";
+        document.write("New length after things[-10]: " + things.length + "<br />");
+        //<!-- So adding elements at negative indices works but doesn't add to length -->
+
+
+        // <!-- Method 3 -->
+        var stuff = new Array();
+        stuff[0] = "baconator";
+        stuff[1] = "old pumpkins";
+
+        //<!------ Properties of Arrays --------->
+        // Concatenation
+        var testList = people.concat(stuff);
+        document.write(things + "<br />");
+        x = -10;
+        while (x < things.length) {
+            document.write("x: " + x + ". Element: " + things[x] + "<br />");
+            x++;
+        }
+
+        // Joining all elements into one string
+        var string1 = testList.join(" ---- ");
+        document.write(string1 + "<br />");
+
+        // Pushing elemensts
+        printStuff("PUSHING ELEMENTS: ", testList);
+        testList.push("Sasha", "Connie");
+        printStuff("", testList);
+
+        // Popping elements
+        printStuff("POPPING ELEMENTS: ", testList);
+        var popped = testList.pop()
+        printStuff("", testList);
+        document.write("Popped element: " + popped + "<br />");
+
+        // Reversing the list
+        printStuff("REVERSING THE ARRAY: ", testList)
+        testList.reverse();
+        printStuff("", testList);
+
+        // Sorting the list
+        printStuff("SORTING THE LIST: ", testList);
+        testList.sort();
+        printStuff("", testList);
+
+
+        function printStuff(titl, lst) {
+            if (!(titl === "")) {
+                document.write("<br />" + titl + "<br />");
+            }
+            document.write(lst.join(" - ") + "<br />");
+        }
+
+        //<!--------------------ASSOCIATIVE ARRAYS ---------------------------->
+        // Note: Pretty much a hash map
+        var assArr = new Array();
+        assArr["key1"] = "value1";
+        assArr["key2"] = "value2";
+        document.write("<br />" + assArr["key2"] + "<br />");
+
+
+        -->
+    </script>
+
+    <script type="text/javascript">
+        <!--
+
+
+        //<!--------------------------- MATH ---------------------------------->
+        //More at https://www.w3schools.com/jsref/jsref_obj_math.asp
+        document.write(Math.PI + "<br />" + Math.E);
+        var thre = Math.sqrt(9);
+
+        //<!----------------------- DATE OBJECT/TIME---------------------------->
+        //setInterval("doSomething()", 1000);
+        function doSomething() {
+            document.write("Will print every n milliseconds");
+        }
+
+        //setInterval("printTime()", 1000);
+        function printTime() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            document.write(hours + ":" + minutes + ":" + seconds + "<br />");
+        }
+
+
+
+
+        //<!--------------------------- PROMPTS ------------------------------>
+        // NOTE: Prompt doesn't show up in Atom, but does in web browsers
+        var inp = prompt("Text above entry field", "DEFAULT TEXT");
+        document.write("Hello " + inp);
+        //-->
+    </script>
+
+</body>
+
+<html>
