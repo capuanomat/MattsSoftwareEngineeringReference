@@ -85,7 +85,7 @@
 			count++
 		}
 
-		<!-- FORMAT FOR switch/case -->
+		//<!-- FORMAT FOR switch/case -->
 		function printCount() {
 			var toPrint;
 			switch(count) {
