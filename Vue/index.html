@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+      <!-- "TRADITIONAL METHOD"
+      <input type="text" id="input" />
+      -->
+
+      <!-- WITH VUE -->
+      <div id="root">
+        <input type="text" id="input" v-model="message"/>
+        <p>The value of the input is: {{message}}</p>
+      </div>
+
+      <script src="https://unpkg.com/vue@2.4.4/dist/vue.js"></script>
+
+      <script>
+        /* TRADITIONAL METHOD: Apparently, the following is tedious to do but standard without Vue
+        let data = {
+          message: 'Hello World'
+        };
+        document.querySelector('#input').value = data.message;
+        */
+
+        // WITH VUE
+        new Vue({
+          el: '#root',  //This means that Vue is only active within the part that has ID of #root
+          data: {
+            message: 'Hello World'
+          }
+        })
+        /* Open this in chrome and open developer tools (if it prompts you to install a chrome extension
+           on github then do it, manage extensions, and allow access to URLs for that extension). developer
+          tools will now have a Vue tab, and you can view the variables from the console. E.g. try $vm0
+          or $vm0.message in console */
+      </script>
+
+  </body>
+
+</html>
