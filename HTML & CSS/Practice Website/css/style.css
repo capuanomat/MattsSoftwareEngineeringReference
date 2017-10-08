@@ -137,7 +137,7 @@ header a:hover {
 }
 
 #boxes .box img {
-    width: 90px;
+    max-width: 90px;
 }
 
 /* Sidebar */
@@ -179,12 +179,13 @@ footer {
 /* Media Queries */
 
 @media(max-width: 768px){
-/* Anything you put in here will only be affected when the width is 768px or more
+/* Anything you put in here will only be affected when the width is 768px or less
     E.g. Try typing:
     body {
     display: none;
     }
     */
+
     header #branding,
     header nav,
     header nav li,
