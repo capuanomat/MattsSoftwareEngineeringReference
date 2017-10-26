@@ -18,6 +18,7 @@ public class TestCases {
     private static final int INTARRLENGTHS = 20;
     private Integer[] intMixed;
     private Integer[] intSorted;
+    private Integer[] intSame;
     private Comparator<Integer> intComparator;
     private String[] strMixed;
     private String[] strSorted;
@@ -29,10 +30,11 @@ public class TestCases {
     public void setUp() {
         Random rand = new Random();
         intMixed = new Integer[INTARRLENGTHS];
+        intSame = new Integer[INTARRLENGTHS];
         for (int i = 0; i < intMixed.length; i++) {
             intMixed[i] = rand.nextInt(999);
+            intSame[i] = 8;
         }
-
         intSorted = intMixed.clone();
         Arrays.sort(intSorted);
 
@@ -84,6 +86,14 @@ public class TestCases {
         System.out.println("MERGE UNSORTED: " + Arrays.toString(intMixed));
         Algos.mergeSort(intMixed, intComparator);
         System.out.println("MERGE SORTED:   " + Arrays.toString(intMixed) + "\n");
+        assertArrayEquals(intSorted, intMixed);
+    }
+
+    @Test//(timeout = TIMEOUT)
+    public void testQuickSort() {
+        System.out.println("QUICK UNSORTED: " + Arrays.toString(intMixed));
+        Algos.quickSort(intMixed, intComparator);
+        System.out.println("QUICK SORTED:   " + Arrays.toString(intMixed) + "\n");
         assertArrayEquals(intSorted, intMixed);
     }
 
