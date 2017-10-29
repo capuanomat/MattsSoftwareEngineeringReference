@@ -19,7 +19,6 @@
             <state relative-caret-position="1215">
               <caret line="189" column="4" lean-forward="false" selection-start-line="189" selection-start-column="4" selection-end-line="189" selection-end-column="4" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="docComment;method#bubbleSort#0;class#Algos#0" expanded="false" />
                 <element signature="method#bubbleSort#0;class#Algos#0" expanded="false" />
                 <element signature="docComment;method#insertionSort#0;class#Algos#0" expanded="false" />
@@ -35,17 +34,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCases.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestCases.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestCases.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
+            <state relative-caret-position="405">
               <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding>
+                <element signature="e#3473#3474#0" expanded="false" />
+                <element signature="e#3509#3510#0" expanded="false" />
+                <element signature="e#3549#3550#0" expanded="false" />
+                <element signature="e#3580#3581#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataStructs.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DataStructs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+              <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1166#1363#0" expanded="true" />
-                <element signature="e#1362#1363#0" expanded="true" />
-                <element signature="e#1390#1578#0" expanded="true" />
-                <element signature="e#1577#1578#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,6 +79,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/Algos.java" />
         <option value="$PROJECT_DIR$/src/TestCases.java" />
+        <option value="$PROJECT_DIR$/src/DataStructs.java" />
       </list>
     </option>
   </component>
@@ -94,7 +105,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -142,10 +152,11 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Practice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Spring 2017/CS - 1332/Homeworks/Homework 10" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -484,7 +495,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2572973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26702702" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -520,10 +531,83 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Algos.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="189" column="4" lean-forward="false" selection-start-line="189" selection-start-column="4" selection-end-line="189" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;method#bubbleSort#0;class#Algos#0" expanded="false" />
+            <element signature="method#bubbleSort#0;class#Algos#0" expanded="false" />
+            <element signature="docComment;method#insertionSort#0;class#Algos#0" expanded="false" />
+            <element signature="method#insertionSort#0;class#Algos#0" expanded="false" />
+            <element signature="docComment;method#selectionSort#0;class#Algos#0" expanded="false" />
+            <element signature="method#selectionSort#0;class#Algos#0" expanded="false" />
+            <element signature="docComment;method#mergeSort#0;class#Algos#0" expanded="false" />
+            <element signature="method#mergeSort#0;class#Algos#0" expanded="false" />
+            <element signature="docComment;method#quickSort#0;class#Algos#0" expanded="false" />
+            <element signature="docComment;method#quickSortHelp#0;class#Algos#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestCases.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="e#3473#3474#0" expanded="false" />
+            <element signature="e#3509#3510#0" expanded="false" />
+            <element signature="e#3549#3550#0" expanded="false" />
+            <element signature="e#3580#3581#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStructs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3051">
+          <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algos.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5103">
           <caret line="189" column="4" lean-forward="false" selection-start-line="189" selection-start-column="4" selection-end-line="189" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#bubbleSort#0;class#Algos#0" expanded="false" />
+            <element signature="method#bubbleSort#0;class#Algos#0" expanded="false" />
+            <element signature="docComment;method#insertionSort#0;class#Algos#0" expanded="false" />
+            <element signature="method#insertionSort#0;class#Algos#0" expanded="false" />
+            <element signature="docComment;method#selectionSort#0;class#Algos#0" expanded="false" />
+            <element signature="method#selectionSort#0;class#Algos#0" expanded="false" />
+            <element signature="docComment;method#mergeSort#0;class#Algos#0" expanded="false" />
+            <element signature="method#mergeSort#0;class#Algos#0" expanded="false" />
+            <element signature="docComment;method#quickSort#0;class#Algos#0" expanded="false" />
+            <element signature="docComment;method#quickSortHelp#0;class#Algos#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestCases.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="e#3473#3474#0" expanded="false" />
+            <element signature="e#3509#3510#0" expanded="false" />
+            <element signature="e#3549#3550#0" expanded="false" />
+            <element signature="e#3580#3581#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5103">
+          <caret line="189" column="4" lean-forward="false" selection-start-line="189" selection-start-column="4" selection-end-line="189" selection-end-column="4" />
+          <folding>
             <element signature="docComment;method#bubbleSort#0;class#Algos#0" expanded="false" />
             <element signature="method#bubbleSort#0;class#Algos#0" expanded="false" />
             <element signature="docComment;method#insertionSort#0;class#Algos#0" expanded="false" />
@@ -543,11 +627,10 @@
         <state relative-caret-position="459">
           <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1166#1363#0" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1390#1578#0" expanded="true" />
-            <element signature="e#1577#1578#0" expanded="true" />
+            <element signature="e#3473#3474#0" expanded="false" />
+            <element signature="e#3509#3510#0" expanded="false" />
+            <element signature="e#3549#3550#0" expanded="false" />
+            <element signature="e#3580#3581#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -557,7 +640,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#bubbleSort#0;class#Algos#0" expanded="false" />
             <element signature="method#bubbleSort#0;class#Algos#0" expanded="false" />
             <element signature="docComment;method#insertionSort#0;class#Algos#0" expanded="false" />
@@ -577,11 +659,10 @@
         <state relative-caret-position="189">
           <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1166#1363#0" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1390#1578#0" expanded="true" />
-            <element signature="e#1577#1578#0" expanded="true" />
+            <element signature="e#3473#3474#0" expanded="false" />
+            <element signature="e#3509#3510#0" expanded="false" />
+            <element signature="e#3549#3550#0" expanded="false" />
+            <element signature="e#3580#3581#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -619,7 +700,6 @@
         <state relative-caret-position="1215">
           <caret line="189" column="4" lean-forward="false" selection-start-line="189" selection-start-column="4" selection-end-line="189" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#bubbleSort#0;class#Algos#0" expanded="false" />
             <element signature="method#bubbleSort#0;class#Algos#0" expanded="false" />
             <element signature="docComment;method#insertionSort#0;class#Algos#0" expanded="false" />
@@ -636,14 +716,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TestCases.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
+        <state relative-caret-position="405">
           <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding>
+            <element signature="e#3473#3474#0" expanded="false" />
+            <element signature="e#3509#3510#0" expanded="false" />
+            <element signature="e#3549#3550#0" expanded="false" />
+            <element signature="e#3580#3581#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStructs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+          <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1166#1363#0" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1390#1578#0" expanded="true" />
-            <element signature="e#1577#1578#0" expanded="true" />
           </folding>
         </state>
       </provider>
