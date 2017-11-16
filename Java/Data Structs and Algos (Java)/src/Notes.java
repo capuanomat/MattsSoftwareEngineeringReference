@@ -40,6 +40,18 @@ public class Notes {
         }
     }
 
+    /* ======= 2D Arrays ======= */
+    public void example2D() {
+        int[][] foo = new int[][]{
+                new int[]{1, 2, 3},
+                new int[]{1, 2, 3, 4},
+        };
+
+        System.out.println(foo.length); //2
+        System.out.println(foo[0].length); //3
+        System.out.println(foo[1].length); //4
+    }
+
     /*
     == Adding a duplicate to a HashMap replaces the old value
     == Adding a duplicate to a HasSet doesn't insert the new value
