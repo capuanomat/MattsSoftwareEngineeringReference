@@ -1,18 +1,29 @@
 import java.util.HashSet;
+import java.util.Scanner;
 import java.util.Set;
 
 /**
  * Created by Matthieu J.B Capuano on 11/15/2017.
- * Important notes in preparing for interview.
+ * Important notes in preparing for interview and general Java programming.
  */
 public class Notes {
 
-    /* Interesting note on quickSort and mergeSort with regards to stability:
-       - http://cafe.elharo.com/programming/java-programming/why-java-util-arrays-uses-two-sorting-algorithms/
-        Basically, stability doesn't matter for primitive data types because you're not dealing
-        with pointers, a 6 is the same as a 6 if they're both ints, whereas "6" and "6" may have
-        different pointers depending on variable name. That's why Arrays.sort uses quickSort for
-        primitives but mergeSort for objects. Apparently quickSort is faster.
+    /** IF YOU EVER NEED TO READ INPUT THAT'S PASSED INTO THE MAIN METHOD: **/
+    Scanner reader = new Scanner(System.in);
+    String input = reader.nextLine();
+    char[] letters = input.toCharArray();
+
+    /** You can't and don't need to use .equals for primitives, just use ==. Only use .equals
+     *  for objects
+     */
+
+    /** A NOTE ON QUICKSORT AND MERGE SORT:
+     *  Interesting note on quickSort and mergeSort with regards to stability:
+     * - http://cafe.elharo.com/programming/java-programming/why-java-util-arrays-uses-two-sorting-algorithms/
+     *  Basically, stability doesn't matter for primitive data types because you're not dealing
+     *  with pointers, a 6 is the same as a 6 if they're both ints, whereas "6" and "6" may have
+     *  different pointers depending on variable name. That's why Arrays.sort uses quickSort for
+     *  primitives but mergeSort for objects. Apparently quickSort is faster.
      */
 
     /* ======= BINARY SEACH =======

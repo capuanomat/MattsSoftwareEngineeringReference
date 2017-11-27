@@ -8,6 +8,7 @@ import java.util.*;
  */
 public class stringPractice {
 
+    /******************************** PROBLEM 1 ********************************/
     /**
      * PROBLEM: Write a function that prints every every duplicate character in a string once.
      *          (As in, if a character repeats multiple times, it prints it once)
@@ -31,9 +32,7 @@ public class stringPractice {
         }
     }
 
-    //NOTE: Their solution prints the characters and their counts:
-    //      http://www.java67.com/2014/03/how-to-find-duplicate-characters-in-String-Java-program.html
-
+    /******************************** PROBLEM 2 ********************************/
     /**
      * PROBLEM: Check if two strings are annagrams of each other.
      * @param str1
@@ -49,6 +48,7 @@ public class stringPractice {
         return Arrays.equals(c1, c2);
     }
 
+    /******************************** PROBLEM 3 ********************************/
     /**
      * PROBLEM: Return the index of the first non-repeating character, if there are none return -1.
      * @param s
@@ -138,12 +138,13 @@ public class stringPractice {
         return nonRepeating.get(0);
     }
 
+    /******************************** PROBLEM 4 ********************************/
     /**
      * PROBLEM: Reverse a String
      * @param str
      * @return
+     * SOLUTION 1
      */
-    /** SOLUTION 1 **/
     static String reverseStr(String str) {
         Stack<Character> s = new Stack<>();
         for (int i = 0; i < str.length(); i++) {
@@ -154,7 +155,7 @@ public class stringPractice {
         return toRet;
     }
 
-    /** SOLUTION 2 (If string builder is allowed)**/
+    /** SOLUTION 2 (If StringBuilder is allowed)**/
     static String reverseStr2(String str) {
         return new StringBuilder(str).reverse().toString();
     }
@@ -195,4 +196,41 @@ public class stringPractice {
         }
         return reverseStrRecursively(str.substring(1)) + str.charAt(0);
     }
+
+
+    /******************************** PROBLEM 5 ********************************/
+
+
+    /******************************** PROBLEM 6 ********************************/
+    public static void printDupsWithCounts(String str) {
+        Map<Character, Integer> mp = new LinkedHashMap<>();
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            mp.put(c, mp.containsKey(c) ? mp.get(c) + 1 : 1);
+        }
+        for (Map.Entry<Character, Integer> entry : mp.entrySet()) {
+            if (entry.getValue() > 1)
+                System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        }
+    }
+    // NOTE: You could also convert str.toCharArray() and use a for-each loop for the first loop
+
+    /******************************** PROBLEM 7 ********************************/
+    public static String vowsAndCons(String str) {
+        str = str.toLowerCase();
+        int vows = 0;
+        int cons = 0;
+        for (char c : str.toCharArray()) {
+            if ((c == 'a') || (c == 'e') || (c == 'i') || (c == 'o') || (c == 'u')) {
+                vows++;
+            } else if ((97 <= c) && (c <= 'z')) {
+                cons++;
+            }
+        }
+        return "Vowels: " + vows + " Consonants: " + cons;
+    }
+    // Their solution is essentially the same but with a switch statement and only countin vowels
+
+    /******************************** PROBLEM 8 ********************************/
+
 }

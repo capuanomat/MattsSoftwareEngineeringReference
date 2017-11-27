@@ -20,12 +20,12 @@ public class stringPracticeTestCases {
         stringPractice.printDups("fdkjg2");
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     public void anagCheckTests() {
         assertTrue(stringPractice.anagCheck("this", "sith"));
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     public void firstUniqCharTests() {
         assertEquals(0, stringPractice.firstUniqChar("leetcode"));
         assertEquals(2, stringPractice.firstUniqChar("loveleetcode"));
@@ -38,8 +38,26 @@ public class stringPracticeTestCases {
         assertEquals(1, stringPractice.firstUniqChar3("simplest"));
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     public void reverseStrTests() {
         assertEquals("GMO TSET A SI SIHT", stringPractice.reverseStr4("THIS IS A TEST OMG"));
+    }
+
+    @Test(timeout = TIMEOUT)
+    public void printDupsWithCountTests() {
+        stringPractice.printDupsWithCounts("THISSS ISSSS A POTATO!");
+        System.out.println("---- Test Case 2 ----");
+        stringPractice.printDupsWithCounts("abbcccddddeeeeeffffffggggggghhhhhhhhiiiiiiiiijjjjjjjjjj");
+    }
+
+    @Test(timeout = TIMEOUT)
+    public void vowsAndConsTests() {
+        System.out.println(stringPractice.vowsAndCons("aeiou123456AEIOUMMMMM"));
+        assertEquals("Vowels: 0 Consonants: 15",
+                stringPractice.vowsAndCons("mmmmMmmmmMmmmmM"));
+        System.out.println(stringPractice.vowsAndCons("mmmmMmmmmMmmmmM"));
+        assertEquals("Vowels: 3 Consonants: 9",
+                stringPractice.vowsAndCons("thisisokkkkk"));
+        System.out.println(stringPractice.vowsAndCons("thisisokkkkk"));
     }
 }
