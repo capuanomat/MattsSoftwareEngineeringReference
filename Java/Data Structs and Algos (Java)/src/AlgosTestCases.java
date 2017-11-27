@@ -14,7 +14,7 @@ import java.util.Random;
  * Created by Matthieu J.B Capuano on 10/25/2017.
  */
 
-public class TestCases {
+public class AlgosTestCases {
     private static final int INTARRLENGTHS = 20;
     private Integer[] intMixed;
     private Integer[] intSorted;

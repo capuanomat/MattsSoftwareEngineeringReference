@@ -7,30 +7,22 @@ import java.util.Set;
  */
 public class Notes {
 
-    public class Node<T> {
-        Node left;
-        Node right;
-        T data;
+    /* Interesting note on quickSort and mergeSort with regards to stability:
+       - http://cafe.elharo.com/programming/java-programming/why-java-util-arrays-uses-two-sorting-algorithms/
+        Basically, stability doesn't matter for primitive data types because you're not dealing
+        with pointers, a 6 is the same as a 6 if they're both ints, whereas "6" and "6" may have
+        different pointers depending on variable name. That's why Arrays.sort uses quickSort for
+        primitives but mergeSort for objects. Apparently quickSort is faster.
+     */
 
-        public Node(T data, Node left, Node right) {
-            this.data = data;
-            this.left = left;
-            this.right = right;
-        }
-
-        public Node(T data) {
-            this.data = data;
-        }
-    }
-    /*
-    ============================ BINARY SEACH ============================
+    /* ======= BINARY SEACH =======
     - Binary search only works on sorted arrays
     - Time Complexity: O(log⁡(n) ) because you’re halving your data input on each pass
         - Not useful if the sorted array changes often “because insertions and deletions are slow”
     - Space Complexity: O(1) because you just need a reference for the lower and upper bound, and current element
     */
     // BINARY SEARCH ON AN ARRAY:
-    public Node binarySearchArray(T[] arr, T value) {
+    public <T> Node binarySearchArray(T[] arr, T value) {
         int min = 0;
         int max = arr.length - 1;
 
@@ -38,6 +30,7 @@ public class Notes {
             int mid = (min + max) / 2;
             //if (arr[min].compareTo)
         }
+        return new Node("THIS NOT FINISHED");
     }
 
     /* ======= 2D Arrays ======= */
@@ -78,10 +71,28 @@ public class Notes {
     boolean containsDuplicates2(int[] a) {
         Set<Integer> s = new HashSet<>();
 
-        for ( int b : a)
+        for (int b : a)
             s.add(b);
 
         return s.size() != a.length;
     }
     // NOTE: The above works because a set doesn't have duplicates
+
+
+    /** Classes used for some of the notes above. */
+    public class Node<T> {
+        Node left;
+        Node right;
+        T data;
+
+        public Node(T data, Node left, Node right) {
+            this.data = data;
+            this.left = left;
+            this.right = right;
+        }
+
+        public Node(T data) {
+            this.data = data;
+        }
+    }
 }
