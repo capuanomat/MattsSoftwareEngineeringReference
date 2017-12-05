@@ -138,6 +138,8 @@ public class stringPractice {
         return nonRepeating.get(0);
     }
 
+    // More solutions to this problem in codeFightsArrays
+
     /******************************** PROBLEM 4 ********************************/
     /**
      * PROBLEM: Reverse a String

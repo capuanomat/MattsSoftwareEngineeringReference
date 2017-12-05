@@ -1,6 +1,10 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Comparator;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 
@@ -59,5 +63,44 @@ public class stringPracticeTestCases {
         assertEquals("Vowels: 3 Consonants: 9",
                 stringPractice.vowsAndCons("thisisokkkkk"));
         System.out.println(stringPractice.vowsAndCons("thisisokkkkk"));
+    }
+
+    @Test(timeout = TIMEOUT)
+    public void randomTest() {
+        /*
+        String s = "abcde";
+        int i = 1;
+        System.out.println(s);
+        System.out.println(s.substring(0, 2));
+         */
+        Queue<String> q = new PriorityQueue<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return o1.length() - o2.length();
+            }
+        });
+        q.offer("this");
+        q.offer("is");
+        q.offer("a");
+        q.offer("test");
+        q.offer("dfkjgsdfkjgsdfg");
+        q.offer("fooobarrrrrr");
+        q.offer("fooobarrrrrrbroooo");
+        while (!q.isEmpty()) System.out.println(q.poll());
+
+        Queue<Integer> q2 = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
+            }
+        });
+        q2.offer(23);
+        q2.offer(34563546);
+        q2.offer(453);
+        q2.offer(6457457);
+        q2.offer(55555);
+        q2.offer(666666);
+        q2.offer(999999999);
+        while (!q2.isEmpty()) System.out.println(q2.poll());
     }
 }

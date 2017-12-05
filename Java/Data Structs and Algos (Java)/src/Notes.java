@@ -28,8 +28,8 @@ public class Notes {
 
     /* ======= BINARY SEACH =======
     - Binary search only works on sorted arrays
-    - Time Complexity: O(log⁡(n) ) because you’re halving your data input on each pass
-        - Not useful if the sorted array changes often “because insertions and deletions are slow”
+    - Time Complexity: O(log(n) ) because you’re halving your data input on each pass
+        - Not useful if the sorted array changes often 'because insertions and deletions are slow'
     - Space Complexity: O(1) because you just need a reference for the lower and upper bound, and current element
     */
     // BINARY SEARCH ON AN ARRAY:

@@ -37,7 +37,7 @@ public class codeFightsStrings {
     /** SOLUTION 1a: you can just do toRet.trim() instead of worrying about the extra space at
      *               the start in the event that the first character is caps.
      *               You could improve the solution below even further with elements from
-     *               solution 4: using Characters.isUpperCase() and Characters.toLowerCase(c)
+     *               solution 3: using Characters.isUpperCase() and Characters.toLowerCase(c)
      */
     String amendTheSentence1a(String s) {
         String toRet = "";
@@ -74,10 +74,66 @@ public class codeFightsStrings {
         return builder.toString().trim();
     }
 
+    /**
+     * PROBLEM: findFirstSubstringOccurence
+     * DESCRIPTION: Avoid using built-in functions to solve this challenge. Implement them
+     *              yourself, since this is what you would be asked to do during a real interview.
+     *
+     *              Implement a function that takes two strings, s and x, as arguments and finds
+     *              the first occurrence of the string x in s. The function should return an
+     *              integer indicating the index in s of the first occurrence of x. If there are
+     *              no occurrences of x in s, return -1.
+     * @param s
+     * @param x
+     * @return
+     */
+    int findFirstSubstringOccurrence(String s, String x) {
+    /* If build-ins where allowed, you would just do:
+    return s.indexOf(x);
+    */
 
+    /* KMP Algorightm */
+        int[] fTable = buildFailureTable(x);
+        int i = 0;
+        int j = 0;
+        while (i <= (s.length() - x.length())) {
+            while ((j < x.length()) && (s.charAt(i + j) == x.charAt(j))) {
+                j++;
+            }
+            if (0 == j) {
+                i++;
+            } else {
+                if (j == x.length()) {
+                    return i;
+                }
+                int nextAlign = fTable[j - 1];
+                i = i + j - nextAlign;
+                j = nextAlign;
+            }
+        }
+        return -1;
+    }
 
+    static int[] buildFailureTable(String x) {
+        int[] fTable = new int[x.length()];
+        fTable[0] = 0;
 
-    /* Brute-Force solution (too slow):
+        int i = 0;
+        int j = 1;
+        while (j < x.length()) {
+            if (x.charAt(i) == x.charAt(j)) {
+                fTable[j++] = ++i;
+            } else if ((x.charAt(i) != x.charAt(j) && (i != 0))) {
+                i = fTable[i - 1];
+            } else if ((x.charAt(i) != x.charAt(j) && (i == 0))) {
+                fTable[j++] = 0;
+            }
+        }
+
+        return fTable;
+    }
+
+    /* Brute-Force solution (works but too slow):
     for (int i = 0; i < s.length(); i++) {
         if (s.charAt(i) == x.charAt(0)) {
             int j = 0;

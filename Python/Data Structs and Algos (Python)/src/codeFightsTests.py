@@ -1,0 +1,2 @@
+class codeFightTests:
+    pass
