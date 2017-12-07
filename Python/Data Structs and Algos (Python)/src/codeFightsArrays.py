@@ -3,6 +3,7 @@
 class codeFightsArrays:
     """
     PROBLEM: firstDuplicate
+    NOTE: O(n) time, O(1) space
     DESCRIPTION: ...
     SOLUTION 1
     """
@@ -25,6 +26,7 @@ class codeFightsArrays:
 
     """
     PROBLEM: firstNotRepeatingCharacter
+    NOTE: Iterate through string once, O(1) space
     DESCRIPTION: ...
     SOLUTION 1
     """
@@ -42,6 +44,20 @@ class codeFightsArrays:
                 return s[i]
             chk.append(s[i])
         return '_'
+
+
+    """
+    PROBLEM: rotateImate
+    NOTE: O(1) Space
+    DESCRIPTION: Rotate a 2D matrix by 90 degrees clockwise...
+    SOLUTION 1: Something similar to how I did it in Java, just reverse by main diagonal and then flip 
+                horizontally
+    """
+
+    # SOLUTION 2 #
+    def rotateImage(a):
+        return [[x[i] for x in a][::-1] for i in range(len(a))]
+
 
 
 class testing:
