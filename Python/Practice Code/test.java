@@ -28,8 +28,15 @@ public class test {
         System.out.println(str.length());
         System.out.println(str.charAt(1));
         */
-        meth(1, 2, 3, 4, 5, 6, 7);
-        vaTest(1, 2, 3);
+        //meth(1, 2, 3, 4, 5, 6, 7);
+        //vaTest(1, 2, 3);
+
+        String str = "89575345";
+        Long lg = Long.parseLong(str);
+        System.out.println(str);
+        System.out.println(str + 1);
+        System.out.println(lg);
+        System.out.println(lg + 1);
     }
 
     public static void meth(int a, int b, int c, int...d) {
