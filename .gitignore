@@ -1,4 +1,2 @@
-Java/Data Structs and Algos (Java)/src/practiceProblems.java
-
-Java/Data Structs and Algos (Java)/.idea/*
-Java/Data Structs and Algos (Java)/.idea/
+*.class
+*.idea/

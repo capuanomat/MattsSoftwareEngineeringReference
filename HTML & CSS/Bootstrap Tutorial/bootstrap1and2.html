@@ -1,0 +1,43 @@
+<!-- TUTORIAL 1: Bootstrap Set up and grid system -->
+<!-- https://www.youtube.com/watch?v=c5xVxSFoyQw&list=PL6gx4Cwl9DGBPw1sFodruZUPheWVKchlM&index=2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width", initial-scale=1, shrink-to-fit="no" />
+        <meta http-equiv="x-ua-compatible" content="IE=edge" />
+
+        <!-- NOTE: Using the URL below means that if the source file changes, so will your website without  you noticing.
+                   It may be better to download the source files for CSS rather than using the CDN (links) but this
+                   works well as a quickstart: -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+    </head>
+
+    <body>
+        <!-- NOTE: GRID SYSTEM
+                   The Bootstrap system uses a grid that divides the page into up to 12 columns
+                   You can group the columns however you want to make sidebars or other
+                   The four classes for the grid system are: xs, sm, md, lg which are good for
+                   phones, tablets, normal desktops and larger desktops respectively.
+               -->
+        <div class="container-fluid"> <!-- Try changing this to just "container" to see what happens".
+                                           container-fluid is so it adjusts to screen size -->
+            <h1>Three Column Layout</h1>
+            <div class="row">
+                <div class="col-md-4", style="background-color: #FF9999">Left</div>
+                <div class="col-md-4", style="background-color: #99CCFF">Middle</div>
+                <div class="col-md-4", style="background-color: #00CC99">Right</div>
+            </div>
+        </div>
+
+
+        <script src="js/bootstrap.min.js"></script>
+        <!-- NOTE: As for the link to the stylesheet in the <head>, use the downloaded files
+                   as above instead of the link below. -->
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    </body>
+</html>
