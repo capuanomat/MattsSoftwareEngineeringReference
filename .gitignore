@@ -1,2 +1,5 @@
 *.class
 *.idea/
+
+Python/.ipynb_checkpoints
+Python/.idea
