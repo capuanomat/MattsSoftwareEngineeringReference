@@ -1,5 +1,6 @@
 *.class
 *.idea/
+./Java/Data Structs and Algos (Java)/.idea/*
 
 Python/.ipynb_checkpoints
 Python/.idea

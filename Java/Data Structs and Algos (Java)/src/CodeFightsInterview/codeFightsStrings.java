@@ -153,4 +153,71 @@ public class codeFightsStrings {
     }
     return -1;
     */
+
+    /**
+     * PROBLEM
+     * @param s
+     * @return
+     */
+    String classifyStrings(String s) {
+        int cons = 0;
+        int vows = 0;
+        boolean mixed = false;
+        boolean tempmix = false;
+        boolean prevVow = false;
+        int lastQInd = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            boolean vow = false;
+            boolean question = false;
+            if (c == '?') {
+                question = true;
+                tempmix = true;
+                lastQInd = i;
+            } else if ((c == 'a') || (c == 'e') || (c == 'i') ||
+                    (c == 'o') || (c == 'u')) {
+                vow = true;
+                prevVow = true;
+            }
+
+            if (question) {
+                cons++;
+                vows++;
+            } else if (vow) {
+                vows++;
+                if (!prevVow) {
+                    tempmix = false;
+                    lastQInd = 0;
+                }
+            } else {
+                cons++;
+                if (prevVow) {
+                    tempmix = false;
+                    lastQInd = 0;
+                }
+            }
+
+            System.out.println("lastQInd: " + lastQInd + " vows: " + vows +
+                    " cons: " + cons + " tempmix: " + tempmix);
+
+
+            if (((cons == 5) || (vows == 3)) && tempmix) {
+                mixed = true;
+                if ((cons == 1) || (cons == 0)) {
+                    cons = 0;
+                    vows = i - lastQInd;
+                } else {
+                    vows = 0;
+                    cons = i - lastQInd;
+                }
+                lastQInd = 0;
+                tempmix = false;
+            } else if (((cons == 5) || (vows == 3)) && !tempmix) {
+                return "bad";
+            }
+        }
+
+        return (mixed) ? "mixed": "good";
+    }
+
 }
