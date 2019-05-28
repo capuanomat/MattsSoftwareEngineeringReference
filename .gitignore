@@ -6,3 +6,9 @@
 
 Python/.ipynb_checkpoints
 Python/.idea
+
+
+C++/*.sln
+C++/*.vcxproj*
+C++/.vs/
+C++/Debug/
