@@ -13,6 +13,7 @@ Delete le branch: `git branch -d <branch_name>`
 Create le branch: `git branch <branch_name>`  
 Push le local branch to remove: `git checkout <branch_name>; git push origin <branch_name>`  
 - For le first time: `git push -u origin <branch_name>`  
+
 Delete le remote branch: `git push origin --delete feature/login`  
 
 
