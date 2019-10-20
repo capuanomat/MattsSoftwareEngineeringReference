@@ -8,6 +8,13 @@ You know how sometimes you have to implement a certain feature in your code and 
 Well that's why. Now if I'm programming in Python and I forgot how I previously used scikit-learn's decision tree algorithm, I don't have
 to go back and look through 50 different folders of python assignments I've done. I just come here and tada!
 
+## Le Git
+Delete le branch: `git branch -d <branch_name>`
+Create le branch: `git branch <branch_name>`
+Push le local branch to remove: `git checkout <branch_name>; git push origin <branch_name>`
+- For le first time: `git push -u origin <branch_name>`
+Delete le remote branch: `git push origin --delete feature/login`
+
 
 ## Python Virtual environments
 https://www.youtube.com/watch?v=N5vscPTWKOk
