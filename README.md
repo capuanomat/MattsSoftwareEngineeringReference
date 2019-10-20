@@ -10,9 +10,29 @@ to go back and look through 50 different folders of python assignments I've done
 
 
 ## Python Virtual environments
-- Go into your working directory
+https://www.youtube.com/watch?v=N5vscPTWKOk
+- Go into your working directory  
+- Create a virtual environment with:  
 `virtualenv <name_of_env>`
 
-- Activate environment with:
+- Activate environment with:  
 (On Unix) `source <name_of_env>/bin/activate`
 (On Windows) `source activate <name_of_env>`
+
+- Check which environment you are in with:  
+`which python`
+- Check which pip version you are using in that environment:  
+`which pip`
+- Check what packages you have installed in that environment:  
+`pip list`
+- Note: You might want to `pip install` basic packages like numpy, pytz, psutil
+
+- To export all these packages and their version numbers into another package (what this does is create a list of all your packages, their versions, and stores it in a text file so you can use it in other environments):  
+`pip freeze --local > requirements.txt`
+
+- Exit your local environment to go back to global:  
+(Unix)`deactivate`
+(Windows)`source deactivate`
+
+- To delete an environment, deactivate first and then just:  
+`rm -rf <env_name>`
