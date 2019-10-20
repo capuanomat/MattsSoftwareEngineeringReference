@@ -11,6 +11,7 @@ to go back and look through 50 different folders of python assignments I've done
 
 ## Python Virtual environments
 https://www.youtube.com/watch?v=N5vscPTWKOk
+Used to separate the versions, packages, and dependencies for your project.
 - Go into your working directory  
 - Create a virtual environment with:  
 `virtualenv <name_of_env>`
@@ -29,6 +30,9 @@ https://www.youtube.com/watch?v=N5vscPTWKOk
 
 - To export all these packages and their version numbers into another package (what this does is create a list of all your packages, their versions, and stores it in a text file so you can use it in other environments):  
 `pip freeze --local > requirements.txt`
+
+- To install those packages from another virtual environment:  
+`pip install -r requirements.txt`
 
 - Exit your local environment to go back to global:  
 (Unix)`deactivate`
