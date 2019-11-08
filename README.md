@@ -48,3 +48,6 @@ Used to separate the versions, packages, and dependencies for your project.
 
 - To delete an environment, deactivate first and then just:  
 `rm -rf <env_name>`
+
+### Heap and Stack Memory Allocation
+https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
