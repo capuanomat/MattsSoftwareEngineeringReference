@@ -15,16 +15,17 @@
 - If you’re passing a string into a function, the function header should read in a const std::string& as the type
 
 ### Tuples
-Reference: https://www.geeksforgeeks.org/tuples-in-c/
-C++ tuples can hold multiple elements (not just 2) of different data types
-They are initialized as arguments in order in which they will be accessed
+- Reference: https://www.geeksforgeeks.org/tuples-in-c/
+- C++ tuples can hold multiple elements (not just 2) of different data types
+- They are initialized as arguments in order in which they will be accessed
 
 ### Operations on Tuples
 - get(): To access the tuple values and modify them, accepts the index and tuple name as arguments
--- Note that the get() method is in std::
--- You can get by either index or type: https://en.cppreference.com/w/cpp/utility/tuple/get
+    - Note that the get() method is in std::
+    - You can get by either index or type: https://en.cppreference.com/w/cpp/utility/tuple/get
 - make_tuple(): to assign tuple with values
--- The values passed need to be in the order with the values declared in tuple
+    - The values passed need to be in the order with the values declared in tuple
+    
 `
 #include<iostream>
 #include<tuple> // for tuple
