@@ -11,8 +11,8 @@
 
 
 ### Passing strings into Functions
-Reference: https://stackoverflow.com/questions/4475634/c-pass-a-string
-If you’re passing a string into a function, the function header should read in a const std::string& as the type
+- Reference: https://stackoverflow.com/questions/4475634/c-pass-a-string
+- If you’re passing a string into a function, the function header should read in a const std::string& as the type
 
 ### Tuples
 Reference: https://www.geeksforgeeks.org/tuples-in-c/
