@@ -51,3 +51,10 @@ Used to separate the versions, packages, and dependencies for your project.
 
 ### Heap and Stack Memory Allocation
 https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
+
+### UML Diagrams
+- https://tallyfy.com/uml-diagram/
+- https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-class-diagram/
+- http://www.cs.sjsu.edu/~pearce/modules/lectures/uml2/class/index.htm
+- http://agilemodeling.com/style/classDiagram.htm
+
