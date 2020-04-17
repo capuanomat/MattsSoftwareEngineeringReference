@@ -2,6 +2,7 @@ Super Useful Learning Resources
 ===============================
 - Real Python: Has tutorials on specific topics (e.g. decorators, sending emails with python, etc.)
     - https://realpython.com/
+    - https://realpython.com/account/purchases/
 - Corey Schafer: Has tutorial series on python libraries and services (e.g. Django, Flask, Pandas)
     - https://www.youtube.com/user/schafer5/featured
 
