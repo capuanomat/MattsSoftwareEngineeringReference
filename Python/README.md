@@ -1,3 +1,5 @@
+The Pickle module for persisting objects: https://realpython.com/preview/python-pickle-module/
+
 ## Python Logging
 https://www.geeksforgeeks.org/logging-in-python/
 
