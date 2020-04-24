@@ -1,14 +1,13 @@
 # Languages-References
-Personal reference of all programming languages I've studied for ease of access and later review
+Personal reference of all programming languages I've studied. Contains basic programming language notes to remember, specific topics related to a certain language, and some general software engineering notes.
 
-I'm going to go back and try to add all the non-trivial programs I've written in each of those languages.
+# TODO:
+- Clean up Java repo
+- Clean up Python repo
+- Decide which other repos you want to keep
+- Add PID C++ code to C++ directory
 
-# Why do I do this?
-You know how sometimes you have to implement a certain feature in your code and you realize "Hmmm, I've implemented this before but I forgot how/where." 
-Well that's why. Now if I'm programming in Python and I forgot how I previously used scikit-learn's decision tree algorithm, I don't have
-to go back and look through 50 different folders of python assignments I've done. I just come here and tada!
-
-## Le Git
+## Git
 Delete le branch: `git branch -d <branch_name>`  
 Create le branch: `git branch <branch_name>`  
 Push le local branch to remove: `git checkout <branch_name>; git push origin <branch_name>`  
@@ -57,4 +56,4 @@ https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
 - https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-class-diagram/
 - http://www.cs.sjsu.edu/~pearce/modules/lectures/uml2/class/index.htm
 - http://agilemodeling.com/style/classDiagram.htm
-
+- http://www.cs.utsa.edu/~cs3443/uml/uml.html
