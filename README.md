@@ -8,12 +8,13 @@ Personal reference of all programming languages I've studied. Contains basic pro
 - Add PID C++ code to C++ directory
 
 ## Git
-Delete le branch: `git branch -d <branch_name>`  
-Create le branch: `git branch <branch_name>`  
-Push le local branch to remove: `git checkout <branch_name>; git push origin <branch_name>`  
+Delete branch: `git branch -d <branch_name>`  
+Create branch: `git branch <branch_name>`  
+Push local branch to remote: `git checkout <branch_name>; git push origin <branch_name>`  
 - For le first time: `git push -u origin <branch_name>`  
+Delete remote branch: `git push origin --delete feature/login`  
 
-Delete le remote branch: `git push origin --delete feature/login`  
+Merging vs. Rebasing: https://www.atlassian.com/git/tutorials/merging-vs-rebasing
 
 
 ## Python Virtual environments
