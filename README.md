@@ -8,8 +8,8 @@ Personal reference of all programming languages I've studied. Contains basic pro
 - Add PID C++ code to C++ directory
 
 # Common Terminal Commands
-Search for files: `find . -name <file_name>`
-Search for directories`find . -name <directory_name> -type d'
+Search for files: `find . -name <file_name>` \
+Search for directories `find . -name <directory_name> -type d`
 
 ## Git
 Delete branch: `git branch -d <branch_name>`  
