@@ -9,11 +9,11 @@ Personal reference of all programming languages I've studied. Contains basic pro
 
 # Frequently Used
 ## Common Terminal Commands
-| Description        | Command | Example |   |   |
-|--------------------|---|---|---|---|
-| Search for files:  | `find . -name <file_name>` | `find ../ -name executor.py` |   |   |
-| Search for directories | `find . -name <directory_name> -type d` |   |   |   |
-| Find source installation of a language | `whereis <language>` | `whereis python3` |   |   |
+| Description        | Command | Example |
+|--------------------|---|---|
+| Search for files:  | `find . -name <file_name>`                  | `find ../ -name executor.py` |
+| Search for directories | `find . -name <directory_name> -type d` | `find . -name visibilityPackage -type d` |
+| Find source installation of a language | `whereis <language>`    | `whereis python3` |
  
 
 
