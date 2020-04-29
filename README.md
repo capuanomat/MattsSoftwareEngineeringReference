@@ -9,8 +9,13 @@ Personal reference of all programming languages I've studied. Contains basic pro
 
 # Frequently Used
 ## Common Terminal Commands
-Search for files: `find . -name <file_name>` \
-Search for directories `find . -name <directory_name> -type d`
+| Description        | Command | Example |   |   |
+|--------------------|---|---|---|---|
+| Search for files:  | `find . -name <file_name>` | `find ../ -name executor.py` |   |   |
+| Search for directories | `find . -name <directory_name> -type d` |   |   |   |
+| Find source installation of a language | `whereis <language>` | `whereis python3` |   |   |
+ 
+
 
 ## Git
 Delete branch: `git branch -d <branch_name>`  
