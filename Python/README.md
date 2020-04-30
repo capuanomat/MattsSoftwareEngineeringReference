@@ -1,3 +1,7 @@
+# Shebang
+Add the following at the top of any python script and you can execute it with `./myscript.py`, instead of `python3 myscript`:
+`#!/usr/bin/env python3`
+
 # Python Virtual environments
 https://www.youtube.com/watch?v=N5vscPTWKOk
 Used to separate the versions, packages, and dependencies for your project.
