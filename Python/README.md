@@ -34,8 +34,11 @@ Used to separate the versions, packages, and dependencies for your project.
 - To delete an environment, deactivate first and then just:  
 `rm -rf <env_name>`
 
-The Pickle module for persisting objects: https://realpython.com/preview/python-pickle-module/
 
+## Good RealPython articles
+Logging in Python: https://realpython.com/python-logging/
+The Pickle module for persisting objects: https://realpython.com/preview/python-pickle-module/
+How to run your Python script (there's more to it than you think): https://realpython.com/run-python-scripts/
 
 # Other Python knowledge
 ## Python Logging
