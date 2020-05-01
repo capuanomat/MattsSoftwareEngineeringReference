@@ -26,6 +26,9 @@ Delete remote branch: `git push origin --delete feature/login`
 
 Merging vs. Rebasing: https://www.atlassian.com/git/tutorials/merging-vs-rebasing
 
+## Pimp up your Terminal hoe
+https://medium.com/@ivanaugustobd/your-terminal-can-be-much-much-more-productive-5256424658e8
+
 
 # Less Frequent
 ## Cronjobs
