@@ -1,7 +1,7 @@
 # Languages-References
 Personal reference of all programming languages I've studied. Contains basic programming language notes to remember, specific topics related to a certain language, and some general software engineering notes.
 
-# TODO:
+## TODO:
 - Clean up Java repo
 - Clean up Python repo
 - Decide which other repos you want to keep
