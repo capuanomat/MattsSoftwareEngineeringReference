@@ -9,11 +9,11 @@ Personal reference of all programming languages I've studied. Contains basic pro
 
 # Frequently Used
 ## Common Terminal Commands
-| Description        | Command | Example |
-|--------------------|---|---|
-| Search for files  | `find . -name <file_name>`                  | `find ../ -name executor.py` |
-| Search for directories | `find . -name <directory_name> -type d` | `find . -name visibilityPackage -type d` |
-| Find source installation of a language | `whereis <language>`    | `whereis python3` |
+| Description        | Command |
+|--------------------|---|
+| Search for files  | `find . -name <file_name>`                  |
+| Search for directories | `find . -name <directory_name> -type d` |
+| Find source installation of a language | `whereis <language, e.g. Python3>`    |
  
 
 
@@ -25,7 +25,7 @@ Personal reference of all programming languages I've studied. Contains basic pro
 | Push local branch to remote first time| `git push -u origin <branch_name>` |
 | Push local branch to remote | `git checkout <branch_name>; git push origin <branch_name>` |
 | Delete remote branch | `git push origin --delete feature/login` |
-| Resetting (Undoing all past local commits) |`git reset --hard HEAD~<num_commits> |
+| Resetting (Undoing all past local commits) |`git reset --hard HEAD~<num_commits>` |
 
 Merging vs. Rebasing: https://www.atlassian.com/git/tutorials/merging-vs-rebasing
 
