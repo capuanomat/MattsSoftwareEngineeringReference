@@ -25,6 +25,7 @@ Personal reference of all programming languages I've studied. Contains basic pro
 | Push local branch to remote first time| `git push -u origin <branch_name>` |
 | Push local branch to remote | `git checkout <branch_name>; git push origin <branch_name>` |
 | Delete remote branch | `git push origin --delete feature/login` |
+| Removing from commit environment (undo git add) | `git reset <file_name>`|
 | Resetting (Undoing all past local commits) |`git reset --hard HEAD~<num_commits>` |
 
 Merging vs. Rebasing: https://www.atlassian.com/git/tutorials/merging-vs-rebasing
