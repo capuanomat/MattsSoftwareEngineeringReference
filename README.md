@@ -28,8 +28,13 @@ Excellent tutorials: https://www.atlassian.com/git/tutorials
 | Push local branch to remote | `git checkout <branch_name>; git push origin <branch_name>` |
 | Delete remote branch | `git push origin --delete feature/login` |
 | Removing from commit environment (undo git add) | `git reset <file_name>`|
-| Resetting (Undoing all past local commits) |`git reset --hard HEAD~<num_commits>` |
+| Fixing your shit |
+| See entire commit history | `git reflog` |
+| Restore to the previous state of HEAD | `git reset ORIG_HEAD` |
+| Resetting (force undo past local commits, only do this if you're sure) |`git reset --hard HEAD~<num_commits>` |
+| Reset HEAD to any past points | `git reset HEAD@{<number,_check_git_reflog_>}` |
 
+Undoing ~git reset
 Merging vs. Rebasing: https://www.atlassian.com/git/tutorials/merging-vs-rebasing
 
 ## Pimp up your Terminal hoe
