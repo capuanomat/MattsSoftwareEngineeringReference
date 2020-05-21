@@ -19,6 +19,7 @@ Personal reference of all programming languages I've studied. Contains basic pro
 
 ## Git
 Excellent tutorials: https://www.atlassian.com/git/tutorials
+https://www.atlassian.com/git/tutorials/syncing/git-fetch
 
 | Description        | Command |
 |--------------------|---|
