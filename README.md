@@ -45,13 +45,13 @@ https://medium.com/@ivanaugustobd/your-terminal-can-be-much-much-more-productive
 | Edit your Powerlevel10k Configuration | `vim ~/.p10k.zsh` |
 
 
-# Less Frequent
 ## Cronjobs
 Open the cron table in edit mode:
 `crontab -e`
 
 See the cron table:
 `crontab -l`
+
 
 
 # Other General Software Engineering Knowledge
