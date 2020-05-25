@@ -38,8 +38,11 @@ https://www.atlassian.com/git/tutorials/syncing/git-fetch
 Undoing ~git reset
 Merging vs. Rebasing: https://www.atlassian.com/git/tutorials/merging-vs-rebasing
 
-## Pimp up your Terminal hoe
+## Pimp up your Terminal! (Well worth the time)
 https://medium.com/@ivanaugustobd/your-terminal-can-be-much-much-more-productive-5256424658e8
+| Description        | Command |
+|--------------------|---|
+| Edit your Powerlevel10k Configuration | `vim ~/.p10k.zsh` |
 
 
 # Less Frequent
