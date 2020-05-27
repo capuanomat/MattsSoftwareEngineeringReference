@@ -27,8 +27,8 @@ GO OVER THIS AGAIN: https://stackoverflow.com/questions/927358/how-do-i-undo-the
 |--------------------|---|
 | Create branch  | `git branch <branch_name>` |
 | Delete branch | `git branch -d <branch_name>`   |
-| Fetch a remote branch and locally track it | `git checkout --track [remotename]/[branch]
-` (remotename is usually `origin` |
+| Fetch a remote branch and locally track it | `git checkout --track [remotename]/[branch]`
+ (remotename is usually `origin` |
 | Push local branch to remote first time| `git push -u origin <branch_name>` |
 | Push local branch to remote | `git checkout <branch_name>; git push origin <branch_name>` |
 | Delete remote branch | `git push origin --delete feature/login` |
