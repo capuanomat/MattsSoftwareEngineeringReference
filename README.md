@@ -58,7 +58,7 @@ See the cron table:
 
 
 
-# Other General Software Engineering Knowledge
+# Other General Software Engineering Knowledge (TO SORT & STUDY)
 
 ### Heap and Stack Memory Allocation
 https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
@@ -69,3 +69,22 @@ https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
 - http://www.cs.sjsu.edu/~pearce/modules/lectures/uml2/class/index.htm
 - http://agilemodeling.com/style/classDiagram.htm
 - http://www.cs.utsa.edu/~cs3443/uml/uml.html
+
+
+### Dependency Injection
+https://www.youtube.com/watch?v=hBVJbzAagfs
+
+
+### Consistent Hashing
+https://www.youtube.com/watch?v=jznJKL0CrxM
+https://www.youtube.com/watch?v=viaNG1zyx1g
+https://www.youtube.com/watch?v=zaRkONvyGr8
+
+### Load Balancing
+
+### Floyd’s Tortoise and Hare
+
+### Opencv for Python
+
+### Tensorflow Tutorials
+
