@@ -19,10 +19,13 @@ Personal reference of all programming languages I've studied. Contains basic pro
 
 ## Git
 Excellent tutorials: https://www.atlassian.com/git/tutorials
+
 Merging vs. Rebasing: https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+
 Fetching: https://www.atlassian.com/git/tutorials/syncing/git-fetch
 
 GO OVER THIS AGAIN: https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git?page=1&tab=votes#tab-top
+
 | Description        | Command |
 |--------------------|---|
 | Create branch  | `git branch <branch_name>` |
