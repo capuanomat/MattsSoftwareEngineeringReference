@@ -14,6 +14,7 @@ Personal reference of all programming languages I've studied. Contains basic pro
 | Search for files  | `find . -name <file_name>`                  |
 | Search for directories | `find . -name <directory_name> -type d` |
 | Find source installation of a language | `whereis <language, e.g. Python3>`    |
+| Echo which shell you are using | `echo $SHELL` |
  
 
 
