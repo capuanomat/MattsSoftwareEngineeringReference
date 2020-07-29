@@ -66,6 +66,11 @@ See the cron table:
 
 # Other General Software Engineering Knowledge (TO SORT & STUDY)
 
+## Design Principles
+Separation of Concerns: https://en.wikipedia.org/wiki/Separation_of_concerns
+Model-View-Controller: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+Model-View-Presenter: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter
+
 ### Heap and Stack Memory Allocation
 https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
 
