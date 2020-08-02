@@ -30,6 +30,7 @@ GO OVER THIS AGAIN: https://stackoverflow.com/questions/927358/how-do-i-undo-the
 
 | Description        | Command |
 |--------------------|---|
+| Clone a git directory  | `git clone <repository_url>` |
 | Create branch  | `git branch <branch_name>` |
 | Delete local branch | `git branch -d <branch_name>`   |
 | Force delete local branch | `git branch -D <branch_name>`   |
