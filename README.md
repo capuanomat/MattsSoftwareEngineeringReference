@@ -31,7 +31,9 @@ GO OVER THIS AGAIN: https://stackoverflow.com/questions/927358/how-do-i-undo-the
 | Description        | Command |
 |--------------------|---|
 | Clone a git directory  | `git clone <repository_url>` |
+| Branches |
 | Create branch  | `git branch <branch_name>` |
+| Create and checkout branch | `git checkout -b <branch_name>` |
 | Delete local branch | `git branch -d <branch_name>`   |
 | Force delete local branch | `git branch -D <branch_name>`   |
 | Delete remote branch | `git push origin --delete <branch_name>` |
