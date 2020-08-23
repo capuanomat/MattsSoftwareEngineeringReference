@@ -1,11 +1,6 @@
-# Languages-References
-Personal reference of all programming languages I've studied. Contains basic programming language notes to remember, specific topics related to a certain language, and some general software engineering notes.
+# Software Engineering Reference
+A personal reference of any and all essential things that should be known as a software engineer/software developer. This includes things like references on specific programming languages, git cheat sheets, etc.
 
-## TODO:
-- Clean up Java repo
-- Clean up Python repo
-- Decide which other repos you want to keep
-- Add PID C++ code to C++ directory
 
 # Frequently Used
 ## Common Terminal Commands
