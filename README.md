@@ -2,8 +2,8 @@
 A personal reference of any and all essential things that should be known as a software engineer/developer. This includes things like references on specific programming languages, cheat sheets, etc.
 
 
-# Frequently Used
-## Common Terminal Commands
+# Cheat Sheets
+## Terminal Commands
 | Description        | Command |
 |--------------------|---|
 | Search for files  | `find . -name <file_name>`                  |
@@ -46,13 +46,6 @@ GO OVER THIS AGAIN: https://stackoverflow.com/questions/927358/how-do-i-undo-the
 \*\*https://stackoverflow.com/questions/964876/head-and-orig-head-in-git
 
 
-## Pimp up your Terminal! (Well worth the time)
-https://medium.com/@ivanaugustobd/your-terminal-can-be-much-much-more-productive-5256424658e8
-| Description        | Command |
-|--------------------|---|
-| Edit your Powerlevel10k Configuration | `vim ~/.p10k.zsh` |
-
-
 ## Cronjobs
 Open the cron table in edit mode:
 `crontab -e`
@@ -60,6 +53,11 @@ Open the cron table in edit mode:
 See the cron table:
 `crontab -l`
 
+## Pimp up your Terminal! (Well worth the time)
+https://medium.com/@ivanaugustobd/your-terminal-can-be-much-much-more-productive-5256424658e8
+| Description        | Command |
+|--------------------|---|
+| Edit your Powerlevel10k Configuration | `vim ~/.p10k.zsh` |
 
 
 # Other General Software Engineering Knowledge (TO SORT & STUDY)
