@@ -1,5 +1,5 @@
 # Software Engineering Reference
-A personal reference of any and all essential things that should be known as a software engineer/software developer. This includes things like references on specific programming languages, git cheat sheets, etc.
+A personal reference of any and all essential things that should be known as a software engineer/developer. This includes things like references on specific programming languages, cheat sheets, etc.
 
 
 # Frequently Used
@@ -63,6 +63,9 @@ See the cron table:
 
 
 # Other General Software Engineering Knowledge (TO SORT & STUDY)
+
+## Cyclomatic Complexity
+https://en.wikipedia.org/wiki/Cyclomatic_complexity
 
 ## Design Principles
 Separation of Concerns: https://en.wikipedia.org/wiki/Separation_of_concerns
