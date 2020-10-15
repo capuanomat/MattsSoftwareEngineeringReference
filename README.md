@@ -44,6 +44,7 @@ GO OVER THIS AGAIN: https://stackoverflow.com/questions/927358/how-do-i-undo-the
 
 \*https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1
 \*\*https://stackoverflow.com/questions/964876/head-and-orig-head-in-git
+\*\*\*https://stackoverflow.com/questions/15772134/can-i-delete-a-git-commit-but-keep-the-changes
 
 
 ## Cronjobs
