@@ -37,7 +37,7 @@ GO OVER THIS AGAIN: https://stackoverflow.com/questions/927358/how-do-i-undo-the
 | Push local branch to remote | `git checkout <branch_name>; git push origin <branch_name>` |
 | <b>Fixing your shit:</b> |
 | See entire commit history | `git reflog` |
-| Undo a commit but keep changes | `git reflog` |
+| Undo a commit but keep changes | `git reset HEAD^` |
 | Undo git add (remove from commit environment) | `git reset <file_name>`|
 | Resetting\* (force undo local commits, can take you to any commit I think) |`git reset --hard HEAD~<num_commits>` |
 | Reset HEAD to any past points | `git reset HEAD@{<number,_check_git_reflog_>}` |
