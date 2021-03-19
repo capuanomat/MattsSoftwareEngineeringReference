@@ -20,8 +20,8 @@ A personal reference of any and all essential things that should be known as a s
 | <b>General</b> |
 | Clone a git directory  | `git clone <repository_url>` |
 | <b>Branches</b> |
-| View all branches in package | `git branch -l` |
-| View all remote branches | `git branch -r` |
+| View all local branches in package | `git branch -l` |
+| View all remote branches in a package | `git branch -r` |
 | Create branch  | `git branch <branch_name>` |
 | Create and checkout branch | `git checkout -b <branch_name>` |
 | Delete local branch | `git branch -d <branch_name>` |
