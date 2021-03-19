@@ -20,7 +20,7 @@ A personal reference of any and all essential things that should be known as a s
 | <b>General</b> |
 | Clone a git directory  | `git clone <repository_url>` |
 | View local changes to package | `git status` |
-| Add changes to commit environment | `git add <package1> <package2> <etc.> <can just do . for all>` |
+| Add changes to commit environment | `git add <package1> <package2> <etc.> <just do . for all>` |
 | Commit changes | `git commit -am "<Commit message>` |
 | <b>Branches</b> |
 | View all local branches in package | `git branch -l` |
