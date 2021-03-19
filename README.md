@@ -19,6 +19,9 @@ A personal reference of any and all essential things that should be known as a s
 |--------------------|---|
 | <b>General</b> |
 | Clone a git directory  | `git clone <repository_url>` |
+| View local changes to package | `git status` |
+| Add changes to commit environment | `git add <package1> <package2> <etc.> <can just do . for all>` |
+| Commit changes | `git commit -am "<Commit message>` |
 | <b>Branches</b> |
 | View all local branches in package | `git branch -l` |
 | View all remote branches in a package | `git branch -r` |
@@ -29,11 +32,11 @@ A personal reference of any and all essential things that should be known as a s
 | Force delete local branch | `git branch -D <branch_name>`   |
 | Force delete multiple local branches | `git branch -D <branch1> <branch2> <branch3> <etc.>`   |
 | Delete remote branch | `git push origin --delete <branch_name>` |
-| Delete multiple remote branches | `git push origin --delete <branch1> <branch2> <branch3> <etc.>` |
+| Delete multiple remote branches | `git push origin --delete <branch1> <branch2> <etc.>` |
 | Fetch a remote branch and locally track it | `git checkout --track [remotename]/[branch]` (`remotename` is usually `origin`) |
 | Push local branch to remote first time| `git push -u origin <branch_name>` |
 | Push local branch to remote | `git checkout <branch_name>; git push origin <branch_name>` |
-| <b>Fixing your shit:</b> |
+| <b>Fixing Issues & Undoing Changes</b> |
 | See entire commit history | `git reflog` |
 | Undo a commit but keep changes | `git reset HEAD^` |
 | Undo git add (remove from commit environment) | `git reset <file_name>`|
