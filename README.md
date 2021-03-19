@@ -15,23 +15,21 @@ A personal reference of any and all essential things that should be known as a s
 
 
 ## Git
-Excellent tutorials: https://www.atlassian.com/git/tutorials
-
-Merging vs. Rebasing: https://www.atlassian.com/git/tutorials/merging-vs-rebasing
-
-Fetching: https://www.atlassian.com/git/tutorials/syncing/git-fetch
-
-GO OVER THIS AGAIN: https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git?page=1&tab=votes#tab-top
-
 | Description        | Command |
 |--------------------|---|
+| <b>General</b> |
 | Clone a git directory  | `git clone <repository_url>` |
 | <b>Branches</b> |
+| View all branches in package | `git branch -l` |
+| View all remote branches | `git branch -r` |
 | Create branch  | `git branch <branch_name>` |
 | Create and checkout branch | `git checkout -b <branch_name>` |
-| Delete local branch | `git branch -d <branch_name>`   |
+| Delete local branch | `git branch -d <branch_name>` |
+| Delete multiple local branches  | `git branch -d <branch1> <branch2> <branch3> <etc.>` |
 | Force delete local branch | `git branch -D <branch_name>`   |
+| Force delete multiple local branches | `git branch -D <branch1> <branch2> <branch3> <etc.>`   |
 | Delete remote branch | `git push origin --delete <branch_name>` |
+| Delete multiple remote branches | `git push origin --delete <branch1> <branch2> <branch3> <etc.>` |
 | Fetch a remote branch and locally track it | `git checkout --track [remotename]/[branch]` (`remotename` is usually `origin`) |
 | Push local branch to remote first time| `git push -u origin <branch_name>` |
 | Push local branch to remote | `git checkout <branch_name>; git push origin <branch_name>` |
@@ -42,6 +40,14 @@ GO OVER THIS AGAIN: https://stackoverflow.com/questions/927358/how-do-i-undo-the
 | Resetting\* (force undo local commits, can take you to any commit I think) |`git reset --hard HEAD~<num_commits>` |
 | Reset HEAD to any past points | `git reset HEAD@{<number,_check_git_reflog_>}` |
 | Restore to the previous state of HEAD (\*\*roughly equivalent to `git reset HEAD@{1}` | `git reset ORIG_HEAD` |
+
+Excellent tutorials: https://www.atlassian.com/git/tutorials
+
+Merging vs. Rebasing: https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+
+Fetching: https://www.atlassian.com/git/tutorials/syncing/git-fetch
+
+GO OVER THIS AGAIN: https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git?page=1&tab=votes#tab-top
 
 \*https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1
 \*\*https://stackoverflow.com/questions/964876/head-and-orig-head-in-git
