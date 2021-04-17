@@ -58,6 +58,10 @@ GO OVER THIS AGAIN: https://stackoverflow.com/questions/927358/how-do-i-undo-the
 https://stackoverflow.com/questions/5737002/how-to-delete-a-stash-created-with-git-stash-create
 
 
+## Bash Scripting
+See: https://devhints.io/bash
+
+
 ## Cronjobs
 Open the cron table in edit mode:
 `crontab -e`
@@ -72,7 +76,8 @@ https://medium.com/@ivanaugustobd/your-terminal-can-be-much-much-more-productive
 | Edit your Powerlevel10k Configuration | `vim ~/.p10k.zsh` |
 
 
-# Other General Software Engineering Knowledge (TO SORT & STUDY)
+
+# Other General Software Engineering Knowledge (TO SORT)
 
 ## Cyclomatic Complexity
 https://en.wikipedia.org/wiki/Cyclomatic_complexity
