@@ -42,7 +42,7 @@ A personal reference of any and all essential things that should be known as a s
 | See entire commit history | `git reflog` |
 | Undo a commit but keep changes | `git reset HEAD^` |
 | Undo git add (remove from commit environment) | `git reset <file_name>`|
-| Resetting\* (force undo local commits, can take you to any commit I think) |`git reset --hard HEAD~<num_commits>` |
+| Resetting\* (Go to any past state for that package) |`git reset --hard HEAD~<num_commits>` |
 | Reset HEAD to any past points | `git reset HEAD@{<number,_check_git_reflog_>}` |
 | Restore to the previous state of HEAD (\*\*roughly equivalent to `git reset HEAD@{1}` | `git reset ORIG_HEAD` |
 
