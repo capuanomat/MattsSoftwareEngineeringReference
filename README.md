@@ -22,6 +22,8 @@ A personal reference of any and all essential things that should be known as a s
 | View local changes to package | `git status` |
 | Add changes to commit environment | `git add <package1> <package2> <etc.> <just do . for all>` |
 | Commit changes | `git commit -am "<Commit message>` |
+| Pull latest changes in current package| `git pull` |
+| Pull latest changes in all sub-directories | `for i in */.git; do ( echo $i; cd $i/..; git pull; ); done`|
 | <b>Branches</b> |
 | View all local branches in package | `git branch -l` |
 | View all remote branches in a package | `git branch -r` |
