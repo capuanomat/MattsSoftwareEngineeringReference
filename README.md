@@ -121,6 +121,16 @@ https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
 - http://agilemodeling.com/style/classDiagram.htm
 - http://www.cs.utsa.edu/~cs3443/uml/uml.html
 
+### Other
+- Complex Systems: https://en.wikipedia.org/wiki/Complex_system
+- Systems theory: https://en.wikipedia.org/wiki/Systems_theory
+- Decentralised system: https://en.wikipedia.org/wiki/Decentralised_system
+- Peer-to-peer: https://en.wikipedia.org/wiki/Peer-to-peer
+- Master/slave: https://en.wikipedia.org/wiki/Master/slave_(technology)
+- Failover: https://en.wikipedia.org/wiki/Failover
+- Client-server model: https://en.wikipedia.org/wiki/Client%E2%80%93server_model
+
+
 
 ## Algorithmic
 
