@@ -65,11 +65,11 @@ See: https://devhints.io/bash
 
 
 ## Cronjobs
-Open the cron table in edit mode:
-`crontab -e`
+| Description        | Command |
+|--------------------|---|
+|Open the cron table in edit mode | `crontab -e` |
+|See the cron table | `crontab -l` |
 
-See the cron table:
-`crontab -l`
 
 ## Pimp up your Terminal! (Well worth the time)
 https://medium.com/@ivanaugustobd/your-terminal-can-be-much-much-more-productive-5256424658e8
@@ -78,13 +78,35 @@ https://medium.com/@ivanaugustobd/your-terminal-can-be-much-much-more-productive
 | Edit your Powerlevel10k Configuration | `vim ~/.p10k.zsh` |
 
 
+<br>
 
 # Other General Software Engineering Knowledge (TO SORT)
+https://github.com/google/eng-practices
+https://iansommerville.com/software-engineering-book/
+http://index-of.co.uk/Engineering/Software%20Engineering%20(9th%20Edition).pdf
 
-## Cyclomatic Complexity
+
+## Fleet & Service Management
+### Load Shedding
+- Useful for CPU-bound services (could probably be for any other bounding resource, however, if it's measurable)
+- ...
+- When you have plenty of resources left, what is the throughput you want to satisfy? Call this target throughput. E.g. You want to satisfy 1000TPS.
+ - As your monitored resource usage increases, you have your transfer that dictates what load percentage you want to allow (target load) as a function of this usage. For instance at 80% CPU usage maybe you only want to allow 50% of the resources through (0.5 target load).
+- To avoid the transferFunction being too responsive to sudden changes in resource utilization, we can apply a utilization filter function before the utilisation is passed to the transfer function instead of just using the raw utilization values.
+    - This filter function could just be, for example, an average over fixed time periods (like 10 seconds/30 seconds/60 seconds)
+- Ideally you can also prioritize requests, meaning when local resources become constrained you can allow higher priority requests but start throttling lower priority requests.
+    - For prioritization you uwill sometimes have Priority 0 (top priority, importance means lower Priority #), for which any request is let through. I.e. any request with Priority 0 is let through, but this should be *reserved for exceptional requests*, otherwise it can leave your service vulnerable to brown outs due to resource over-utilization.
+
+### Load Balancing
+
+## Important Concepts
+### Dependency Injection
+https://www.youtube.com/watch?v=hBVJbzAagfs
+
+### Cyclomatic Complexity
 https://en.wikipedia.org/wiki/Cyclomatic_complexity
 
-## Design Principles
+### Design Principles
 Separation of Concerns: https://en.wikipedia.org/wiki/Separation_of_concerns
 Model-View-Controller: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
 Model-View-Presenter: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter
@@ -100,19 +122,17 @@ https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
 - http://www.cs.utsa.edu/~cs3443/uml/uml.html
 
 
-### Dependency Injection
-https://www.youtube.com/watch?v=hBVJbzAagfs
-
+## Algorithmic
 
 ### Consistent Hashing
 https://www.youtube.com/watch?v=jznJKL0CrxM
 https://www.youtube.com/watch?v=viaNG1zyx1g
 https://www.youtube.com/watch?v=zaRkONvyGr8
 
-### Load Balancing
-
 ### Floyd’s Tortoise and Hare
 
+
+## Tools & Tutorials
 ### Opencv for Python
 
 ### Tensorflow Tutorials
