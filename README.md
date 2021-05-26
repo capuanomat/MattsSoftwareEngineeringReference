@@ -99,6 +99,28 @@ http://index-of.co.uk/Engineering/Software%20Engineering%20(9th%20Edition).pdf
 
 ### Load Balancing
 
+
+### Compiled vs Interpreted Languages
+From USC CS102 (Week 15, ppt1): https://bytes.usc.edu/cs102/schedule.html
+Compiled (Natively):
+- Requires code to be converted to the native machine language of the processor in the target system before it can be run
+- Like translating a speech to a different language ahead of time so the speaker can just read it
+- Faster
+- Often allows programmer closer access to the hardware
+
+Interpreted
+- Requires an interpreter program on the target system that will interpret the program source code command by command to the native system at run-time
+- Like speaking through an interpreter where the speaker waits while the translator interprets
+- Better portability to different systems
+- Often abstracts HW functionality with built-in libraries (networking, file I/O, math routines, etc.)
+
+Some languages used for web and desktop apps (e.g. Java and Python) will compile their code to an intermediate form: bytecode
+- Then an interpreter can execute the bytecode faster than interpreting the high-level language directly
+- A new interpreter can be provided for a new device/platform
+
+Languages like C/C++ compile their code directly to a form that can be executed and run on the device.
+
+
 ## Important Concepts
 ### Dependency Injection
 https://www.youtube.com/watch?v=hBVJbzAagfs
