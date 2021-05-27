@@ -1,5 +1,32 @@
 # C++ Quick Notes
 
+
+## How I learned C++ (Key References)
+- Daniel Liang's Book: Introdution to Programming with C++ (2014)
+- USC CS 102: Fundamentals of Computing: https://bytes.usc.edu/cs102
+- USC CS 103: Introduction to Programming: https://bytes.usc.edu/cs103
+- Steven Skiena's Analysis of Algorithms (also good for interview Prep): https://www3.cs.stonybrook.edu/~skiena/373/videos/
+
+
+## Debugging with GDB
+First, compile your code: `g++ --std=c++14 <fileName>.cpp -o <someOutputName>`
+Then execute it with `gdb ./<someOutputName>`
+- Stop the program at line number `n` by specifying (ahead of time) `break n`
+- Then run until a break is hit with `run`
+- To step and execute one line at a time (will go into the function): `step`
+- If you get to a line with a function call you don't want to go into but have to execute (step-over): `next`
+- You can print a variable or expression at any time: `print size`, `print nums[i]`, `print nums[i] == target`, etc.
+- Gdb has a text-based UI ("TUI"), to see bouth source code and debugger command area:
+    - To turn on src display: `layout src`
+    - To turn off src display: `tui disable`
+    - You can toggle between them with Ctrl-X, a
+    - To move your cursor between the windows: Ctrl-X, o
+
+
+
+
+
+
 ### Pass by Value vs. Pass by Reference
 - Reference: https://www.cs.fsu.edu/~myers/c++/notes/references.html
 - ...
@@ -31,27 +58,27 @@
 using namespace std;
 int main()
 {
-    
+
     // Declaring tuple
     tuple <char, int, float> geek;
-    
+
     // Assigning values to tuple using make_tuple()
     geek = make_tuple('a', 10, 15.5);
-  
+
     // Printing initial tuple values using get()
     cout << "The initial values of tuple are : ";
     cout << get<0>(geek) << " " << get<1>(geek);
     cout << " " << get<2>(geek) << endl;
-  
+
     // Use of get() to change values of tuple
     get<0>(geek) = 'b';
     get<2>(geek) =  20.5;
-  
+
      // Printing modified tuple values
     cout << "The modified values of tuple are : ";
     cout << get<0>(geek) << " " << get<1>(geek);
     cout << " " << get<2>(geek) << endl;
-  
+
     return 0;
 }
 `

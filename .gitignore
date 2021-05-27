@@ -1,14 +1,13 @@
-*.class
-*.idea/
-
-./Java/Data Structs and Algos (Java)/.idea/*
-.Java/.idea
-
-Python/.ipynb_checkpoints
-Python/.idea
-
+*.idea
+*.DS_Store
 
 C++/*.sln
 C++/*.vcxproj*
 C++/.vs/
 C++/Debug/
+
+./Java/Data Structs and Algos (Java)/.idea/*
+.Java/.idea
+*.class
+
+*.ipynb_checkpoints
