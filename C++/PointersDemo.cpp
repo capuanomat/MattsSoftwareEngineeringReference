@@ -51,6 +51,7 @@ void DereferencingAPointer() {
     cout << "The value of pCopy is " << pCopy << endl;  // Some memory address
 
     *pCopy = *pTest;    // Assign to copy the value of test, which is 15
+    cout << "The value of copy is " << copy << endl;    // 15, same value as test
     cout << "The value of copy is " << *pCopy << endl;  // 15, same value as test
     cout << "The value of test is " << *pTest << endl;  // 15, untouched
 
@@ -75,10 +76,12 @@ void TwoPointersToTheSameValue() {
     cout << "The value of ppVal2 is " << ppVal2 << endl;    // Different address
 
     *pVal1 = 70;
+    cout << "The value of val is " << val << endl;      // 70
     cout << "The value of val is " << *pVal1 << endl;   // 70
     cout << "The value of val is " << *pVal2 << endl;   // 70
 
     *pVal2 = 71;
+    cout << "The value of val is " << val << endl;      // 70
     cout << "The value of val is " << *pVal1 << endl;   // 71
     cout << "The value of val is " << *pVal2 << endl;   // 71
 }
@@ -87,6 +90,7 @@ void CreatingAndAccessingDynamicObjects() {
     cout << endl << "----- The . and -> Operators -----" << endl;
     string* p = new string("abcdefg");
     std::cout << p << std::endl;    // Some memory address, p is a pointer
+    std::cout << *p << std::endl;   // The actual string
     std::cout << "The first three characters in the string are: " << (*p).substr(0, 3) << std::endl;
     std::cout << "The length of the string is: " << (*p).length() << std::endl;
 

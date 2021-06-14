@@ -43,11 +43,11 @@ void theConstKeyword() {
     const double* const pCircumference2 = &circumference;   // 2. Constant pointer to constant double
     // *pCircumference2 = 32;   // Compiler ERROR, constant double cannot be changed
 
-    // If your variable is not constant, your pointer can but doesn't have to be constant
+    // If your variable is not constant, your pointer can but doesn't have to be constant (w.r.t. the variable)
     double area = 78.54;
     double* pArea = &area;          // Works fine
     const double* pArea2 = &area;   // Works fine
-    // But if your variable is constant, your pointer needs to be as well
+    // But if your variable is constant, your pointer needs to be as well (w.r.t the variable)
     const double diameter = 10;
     // double* pDiameter = &diameter;          // Compiler ERROR
     const double* pDiameter2 = &diameter;   // Works fine
