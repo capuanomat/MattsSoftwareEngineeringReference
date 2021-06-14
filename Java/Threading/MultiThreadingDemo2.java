@@ -1,4 +1,7 @@
 /**
+ * Created by Matthieu J. Capuano on 21/05/2021.
+ */
+/**
  * METHOD 2: Implementing the Runnable Interface
  *
  * NOTE: Uncomment the class below and comment the others if wanting to demo it.

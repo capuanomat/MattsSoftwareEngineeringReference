@@ -6,8 +6,8 @@
 # g++ --std=c++14 Basics.cpp -o BasicsTEMP
 # ./BasicsTEMP
 
-g++ --std=c++14 Constructors.cpp -o ConstructorsTEMP
-./ConstructorsTEMP
+# g++ --std=c++14 Constructors.cpp -o ConstructorsTEMP
+# ./ConstructorsTEMP
 
 # g++ --std=c++14 Strings.cpp -o StringsTEMP
 # ./StringsTEMP
@@ -20,5 +20,8 @@ g++ --std=c++14 Constructors.cpp -o ConstructorsTEMP
 
 # g++ --std=c++14 Vectors.cpp -o VectorsTEMP
 # ./VectorsTEMP
+
+g++ --std=c++17 MultiThreading.cpp -o MultiThreadingTEMP
+./MultiThreadingTEMP
 
 rm *TEMP

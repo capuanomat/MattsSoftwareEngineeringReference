@@ -1,4 +1,7 @@
 /**
+ * Created by Matthieu J. Capuano on 21/05/2021.
+ */
+/**
   * REFERENCE: https://www.geeksforgeeks.org/multithreading-in-java/
   *
   * "Multithreading is a Java feature that allows concurrent execution of two or more parts
@@ -12,7 +15,7 @@
   * 2. Implementing the Runnable Interface
   *
   * Important points:
-  * 1. If we extend the Thread class, our class cannot extend any other class (since Java)
+  * 1. If we extend the Thread class, our class cannot extend any other class (since Java
   *    doesn't support multiple inheritance). But if we implement the Runnable class, we
   *    can still extend other base classes.
   * 2. "We can achieve basic functionality of a thread by extending Thread class because
