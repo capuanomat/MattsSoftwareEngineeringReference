@@ -3,25 +3,30 @@
 # g++ --std=c++14 temp.cpp -o TEMP
 # ./TEMP
 
-# g++ --std=c++14 Basics.cpp -o BasicsTEMP
-# ./BasicsTEMP
+# g++ --std=c++14 Basics.cpp -o TEMP
 
-# g++ --std=c++14 Constructors.cpp -o ConstructorsTEMP
-# ./ConstructorsTEMP
+# g++ --std=c++14 ConstructorsAndClasses.cpp -o TEMP
 
 # g++ --std=c++14 Strings.cpp -o StringsTEMP
-# ./StringsTEMP
 
-# g++ --std=c++14 PointersDemo.cpp -o PointersDemoTEMP
-# ./PointersDemoTEMP
+# g++ --std=c++14 PointersAndReferences.cpp -o TEMP
 
-# g++ --std=c++14 Arrays.cpp -o ArraysTEMP
-# ./ArraysTEMP
+# g++ --std=c++14 ConstKeyword.cpp -o TEMP
 
-# g++ --std=c++14 Vectors.cpp -o VectorsTEMP
-# ./VectorsTEMP
+# g++ --std=c++14 Arrays.cpp -o TEMP
 
-g++ --std=c++17 MultiThreading.cpp -o MultiThreadingTEMP
-./MultiThreadingTEMP
+g++ --std=c++14 Vectors.cpp -o TEMP
+
+# g++ --std=c++14 Inheritance/Parent.cpp Inheritance/ChildOne.cpp Inheritance/InheritanceDemo.cpp -o TEMP
+
+# g++ --std=c++14 Inheritance/ConstructorDestructorCallDemo.cpp -o TEMP
+
+# g++ --std=c++14 Inheritance/Parent.cpp Inheritance/ParentFriend.cpp -o TEMP
+
+# g++ --std=c++17 MultiThreading.cpp -o TEMP
+
+# g++ --std=c++17 Test.cpp -o TEMP
+
+./TEMP
 
 rm *TEMP

@@ -1,3 +1,7 @@
+/**
+ * Created by Matthieu J. Capuano on 26/05/2021.
+ */
+
 // I recommend reading this file along with my notes from Chapter 11 of
 // "Introdution to Programming with C++ (2014) - Daniel Liang"
 
@@ -9,8 +13,11 @@ void PointersBasics();
 void DereferencingAPointer();
 void TwoPointersToTheSameValue();
 void CreatingAndAccessingDynamicObjects();
+void PassByReference(const int& value);
+void PassByReference2(const int* value);
 
 int main() {
+    std::cout << "----- Starting the main function: POINTERSANDREFERENCES -----" << std::endl;
 
     PointersBasics();
 
@@ -20,11 +27,12 @@ int main() {
 
     CreatingAndAccessingDynamicObjects();
 
+    std::cout << "----- Ending the main function: POINTERSANDREFERENCES -----" << std::endl;
     return 0;
 }
 
 void PointersBasics() {
-    cout << "----- Basics: A Value and its Pointer -----" << endl;
+    cout << "----- A Value and its Pointer -----" << endl;
     int count = 5;
     int* pCount = &count;
 
@@ -81,7 +89,7 @@ void TwoPointersToTheSameValue() {
     cout << "The value of val is " << *pVal2 << endl;   // 70
 
     *pVal2 = 71;
-    cout << "The value of val is " << val << endl;      // 70
+    cout << "The value of val is " << val << endl;      // 71
     cout << "The value of val is " << *pVal1 << endl;   // 71
     cout << "The value of val is " << *pVal2 << endl;   // 71
 }

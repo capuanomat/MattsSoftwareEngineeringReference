@@ -1,4 +1,8 @@
 /**
+ * Created by Matthieu J. Capuano on 26/05/2021.
+ */
+
+/**
   * NOTES:
   * Why it's bad to do "using namespace std":
   * https://stackoverflow.com/questions/1452721/why-is-using-namespace-std-considered-bad-practice

@@ -1,3 +1,7 @@
+/**
+ * Created by Matthieu J. Capuano on 13/06/2021.
+ */
+
 #include <iostream>
 #include <thread>
 
