@@ -1,4 +1,0 @@
-https://www.youtube.com/watch?v=HW29067qVWk
-
-Tons of example notebooks if you just google "jupyter galleries"
-https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks

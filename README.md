@@ -65,6 +65,7 @@ See: https://devhints.io/bash
 
 
 ## Cronjobs
+Reference: https://ostechnix.com/a-beginners-guide-to-cron-jobs/
 | Description        | Command |
 |--------------------|---|
 |Open the cron table in edit mode | `crontab -e` |
