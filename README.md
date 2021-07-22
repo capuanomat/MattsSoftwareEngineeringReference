@@ -4,6 +4,7 @@ A personal reference of any and all essential things that should be known as a s
 
 # Cheat Sheets
 ## Terminal Commands
+Decent Reference: https://en.wikipedia.org/wiki/List_of_Unix_commands
 | Description        | Command |
 |--------------------|---|
 | Search for files  | `find . -name <file_name>`                  |
