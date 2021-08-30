@@ -7,11 +7,17 @@ A personal reference of any and all essential things that should be known as a s
 Decent Reference: https://en.wikipedia.org/wiki/List_of_Unix_commands
 | Description        | Command |
 |--------------------|---|
+| <b>Searching</b>|
 | Search for files  | `find . -name <file_name>`                  |
 | Search for directories | `find . -name <directory_name> -type d` |
-| Find source installation of a language | `whereis <language, e.g. Python3>`    |
+| Search for string pattern across all file | `grep - C <string> <directory>` |
+| <b>System & Navigation</b>|
+| Find source installation of a language | `whereis <language, e.g. Python3>` |
 | Echo which shell you are using | `echo $SHELL` |
-| ... | `grep - C <...> <...>` |
+| Print informatio about system | `uname` |
+| Print information about file | `file <fileName>` |
+| <b>Windows</b>|
+| (Windows) Open directory | `explorer.exe <directory>` |
  Grep: https://www.softwaretestinghelp.com/grep-command-in-unix/
 
 
