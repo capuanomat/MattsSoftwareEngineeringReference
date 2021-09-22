@@ -170,10 +170,3 @@ https://www.youtube.com/watch?v=viaNG1zyx1g
 https://www.youtube.com/watch?v=zaRkONvyGr8
 
 ### Floyd’s Tortoise and Hare
-
-
-## Tools & Tutorials
-### Opencv for Python
-
-### Tensorflow Tutorials
-
