@@ -16,7 +16,7 @@ Decent Reference: https://en.wikipedia.org/wiki/List_of_Unix_commands
 | Echo which shell you are using | `echo $SHELL` |
 | Print informatio about system | `uname` |
 | Print information about file | `file <fileName>` |
-| Count number of bytes/lines/characters/words | `wc - (c|l|m|w)` |
+| Count number of bytes/lines/characters/words | `wc -(c\|l\|m\|w)` |
 | Print length of longest line | `wc -L` |
 | <b>Windows</b>|
 | (Windows) Open directory | `explorer.exe <directory>` |
